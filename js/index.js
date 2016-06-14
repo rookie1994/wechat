@@ -459,7 +459,7 @@ wechat.controller('liaotianCtrl',['$scope','$routeParams',function($scope,$route
 }])
 wechat.config(['$routeProvider',function($routeProvider){
 	$routeProvider.when('/',{
-		controller:'wenxiCtrl',
+		controller:'wenxinCtrl',
 		templateUrl:'views/weixin.html',
 		replace:true
 	}).when('/weixin',{
