@@ -80,17 +80,17 @@ wechat.controller('weixinCtrl',['$scope',function($scope){
 	$scope.contacts=[
 		{
 			name:'张三',
-			message:'你好',
+			message:'你好,最近在忙什么呢？',
 			img:'images/1-1.png'
 		},
 		{
 			name:'李四',
-			message:'你好',
+			message:'中午吃饭去哪里吃？',
 			img:'images/1-2.png'
 		},
 		{
 			name:'王五',
-			message:'你好',
+			message:'昨天给你打电话没接，看到回复我',
 			img:'images/tx1.jpg'
 		}
 	];
