@@ -458,7 +458,11 @@ wechat.controller('liaotianCtrl',['$scope','$routeParams',function($scope,$route
 	$scope.xinxis=chatList[id].liaotianjilu;
 }])
 wechat.config(['$routeProvider',function($routeProvider){
-	$routeProvider.when('/weixin',{
+	$routeProvider.when('/',{
+		controller:'wenxiCtrl',
+		templateUrl:'views/weixin.html',
+		replace:true
+	}).when('/weixin',{
 		controller:'weixinCtrl',
 		templateUrl:'views/weixin.html',
 		replace:true
