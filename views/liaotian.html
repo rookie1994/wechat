@@ -1,0 +1,8 @@
+<ul class="chat" id="liaotian">
+    <li class="ct" ng-repeat="h in xinxis">
+        <span ng-if="h.isMe" class="metxt">{{h.xinxi}}</span>
+        <img src="{{heimgs}}" alt="" class="heimg" ng-if="!h.isMe">
+        <img ng-if="h.isMe" src="images/touxiang.png" alt="" class="meimg">
+        <span ng-if="!h.isMe" class="hetxt">{{h.xinxi}}</span>
+    </li>
+</ul>

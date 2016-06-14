@@ -1,0 +1,20 @@
+<div ng-repeat="v in people">
+    <div class="xh">
+        {{v.key}}
+    </div>
+    <div class="tag" ng-repeat="p in v.names">
+        <div class="txbox">
+            <div class="img">
+                <img src="{{p.img}}" alt="">
+            </div>
+            <div class="name">
+                {{p.name}}
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="rightAZ">
+    <li ng-repeat="v in people">
+        <a href="" class="room">{{v.key}}</a>
+    </li>
+</ul>

@@ -1,0 +1,39 @@
+<div id="weixin">
+	<!-- 搜索框 -->
+	<div class="search">
+		<form action="" id="search1">
+			<span class="iconfont">
+				&#xe600;
+				搜索
+			</span>
+			<span class="iconfont">
+				&#xe60b;
+			</span>
+		</form>
+	</div>
+	<!-- 内容 -->
+	<div class="list">
+		<div ng-swipe-left="show='true'" ng-swipe-right="show='false'" class="box" ng-repeat="v in contacts" ng-init="show='false'" ng-class="{showDel:show=='true'}">
+			<div class="cover">
+				<a href="#/weixin/{{$index}}">
+				</a>
+				<div class="lian">
+					<div class="img">
+						<img src="{{v.img}}" alt="">
+					</div>
+					<div class="txt">
+						<p>
+							{{v.name}}
+						</p>
+						<div>
+							{{v.message}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="delete" ng-click="del($index)">
+				删除
+			</div>
+		</div>
+	</div>
+</div>
